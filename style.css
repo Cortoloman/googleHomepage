@@ -84,7 +84,7 @@ body {
 .searchBar {
     width: 100%;
     padding: 0.5rem;
-    font-size: 1.1rem;
+    font-size: 1rem;
     border: unset;
     transition: box-shadow .1s;
     height: 20px;

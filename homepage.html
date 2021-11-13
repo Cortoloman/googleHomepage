@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <script src="https://kit.fontawesome.com/1e6ffeba4c.js" crossorigin="anonymous"></script>
     <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="appearingElements.css">
     <title>Google</title>
 </head>
 <body>
@@ -13,8 +14,23 @@
     <div class="upperDiv">
         <a href="https://mail.google.com/mail/u/0/#inbox">Gmail</a>
         <a href="https://www.google.nl/imghp?hl=en&authuser=0&ogbl">Images</a>
-        <button><i class="fas fa-ellipsis-h"></i></button>
-        <button><i class="fas fa-user-circle"></i></button>
+        <button id="dotsMenu" onclick="toggleAppContainer()"><i class="fas fa-ellipsis-h"></i></button>
+        <button id="userMenu"><i class="fas fa-user-circle"></i></button>
+
+        <div id="googleAppsContainer">
+            <a href=""><i class="fab fa-google greenIcon"></i>Search</a>
+            <a href=""><i class="far fa-envelope redIcon"></i>Gmail</a>
+            <a href=""><i class="fab fa-youtube redIcon"></i>YouTube</a>
+            <a href=""><i class="fas fa-map-marker yellowIcon"></i>Maps</a>
+            <a href=""><i class="fab fa-google-drive greenIcon"></i>Drive</a>
+            <a href=""><i class="far fa-calendar-alt blueIcon"></i>Calendar</a>
+            <a href=""><i class="fab fa-google-play tealIcon"></i>Play</a>
+            <a href=""><i class="far fa-newspaper tealIcon"></i>News</a>
+            <a href=""><i class="fas fa-video yellowIcon"></i>Meet</a>
+            <a href=""><i class="far fa-comment-alt greenIcon"></i>Chat</a>
+            <a href=""><i class="far fa-file-alt blueIcon"></i>Docs</a>
+            <a href=""><i class="fas fa-tag tealIcon"></i>Shopping</a>
+        </div>
     </div>
 
     <div class="middleDiv">
@@ -56,6 +72,6 @@
         </div>
     </div>
     
-    <script src="./script.js"></script>
+    <script src="./appearingElements.js"></script>
 </body>
 </html>

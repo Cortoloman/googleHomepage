@@ -1,0 +1,54 @@
+#googleAppsContainer {
+    position: absolute;
+    top: 4.5rem;
+    right: 1rem;
+    border-radius: 10px;    
+    box-shadow: 0 0 11px rgba(33,33,33);
+    display: none;
+    grid-template-columns: repeat(3, 1fr);
+    height: 350px;
+    width: 250px;
+    padding: 1.5rem 1rem;
+}
+
+#googleAppsContainer a {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border-radius: 10px; 
+}
+
+#googleAppsContainer a:hover {
+    background-color: rgba(167, 232, 252, 0.4);
+    text-decoration: unset;
+}
+
+#googleAppsContainer a i {
+    margin-bottom: 0.5rem;
+    font-size: 2.5rem;
+}
+
+    /* Giving some color to app icons */
+
+#googleAppsContainer .redIcon {
+    color: #FF0000;
+}
+
+#googleAppsContainer .blueIcon {
+    color: #4D8AED;
+}
+
+#googleAppsContainer .greenIcon {
+    color: #01832D;
+}
+
+#googleAppsContainer .tealIcon {
+    color: #00CCF7;
+}
+
+#googleAppsContainer .yellowIcon {
+    color: #FFBA00;
+}
+
+
