@@ -7,6 +7,7 @@ body {
     padding: 0;
     margin: 0;
     font-family: Arial, Helvetica, sans-serif;
+    overflow-x: hidden;
 }
 
 /* Upper Div With Gmail Link and Google Profile */
@@ -58,11 +59,132 @@ body {
         cursor: pointer;
     }
 
-/* Search Bar Styling */
+/* Middle Div */
+
+.middleDiv {
+    margin-top: 0.5rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-top: 3rem;
+}
+
+    /* Search Bar */
+
+.searchBarContainer {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    border: 1px solid #EEEEEE;
+    border-radius: 50px;
+}
 
 .searchBar {
-    width: 40%;
+    width: 100%;
     padding: 0.5rem;
-    border-radius: 50px;
     font-size: 1.1rem;
+    border: unset;
+    transition: box-shadow .1s;
+    height: 20px;
+}
+
+.searchBarContainer div {
+    font-size: 1.1rem;
+    color: #C6C9CD;
+    height: 20px;
+    padding: 0.5rem;
+}
+
+.searchBar:hover {
+    box-shadow: 0 0 11px rgba(33,33,33,.1);
+}
+
+.searchBar:focus {
+    box-shadow: 0 0 11px rgba(33,33,33,.1);
+    outline: unset;
+}
+
+    /* Search Buttons */
+
+.buttonsContainer {
+    margin-top: 2rem;
+}
+
+.buttonsContainer button {
+    background-color: #F8F9FA;
+    border: unset;
+    padding: 0.5rem 1rem;
+    font-size: 1rem;
+    margin-left: 0.5rem;
+    border-radius: 5px;
+}
+
+.buttonsContainer button:hover {
+
+    outline: 2px solid #EAEBED;
+}
+
+/* Languages Div */
+
+.languagesDiv {
+    text-align: center;
+}
+
+/* Bottom Div Styling */
+
+.bottomDiv {
+    background-color: #F2F2F2;
+    width: 100%;
+    color: #81868A;
+    margin-top: auto;
+    position: absolute;
+    bottom: 0;
+}
+
+.bottomDiv > div {
+    padding: 1rem;
+}
+
+.bottomDiv > div p {
+    margin: 0;
+}
+
+.bottomDiv > div:first-of-type {
+    border-bottom: 1px solid #E6E7E9;
+}
+
+.bottomDiv > div:last-of-type {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+
+.bottomDiv > div:last-of-type a {
+    margin-right: 1.5rem;
+}
+
+.bottomDiv > div:last-of-type div:last-of-type {
+    text-align: right;
+}
+
+.bottomDiv a {
+    color: #81868A;
+    text-decoration: unset;
+}
+
+.bottomDiv a:hover {
+    text-decoration: underline;
+}
+
+.bottomDiv button {
+    background-color: unset;
+    border: unset;
+    font-family: Arial, Helvetica, sans-serif;
+    color: #81868A;
+    font-size: inherit;
+}
+
+.bottomDiv button:hover {
+    text-decoration: underline;
 }
